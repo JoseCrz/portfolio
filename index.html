@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mi primera página web</title>
+    <link rel="icon" type="image/png" href="./img/favicon.png">
 </head>
 <body>
     <header>
-        <nav>
-            <ol>
-                <li><a>Portafolio</a></li>
-                <li><a>Experiencia</a></li>
-                <li><a>Trabajemos juntos</a></li>
-            </ol>
-        </nav>
+        <div>
+            <figure>
+                <img width="50px" src="./img/logo-white.png" alt="Logo">
+            </figure>
+            <nav>
+                <ol>
+                    <li><a>Portafolio</a></li>
+                    <li><a>Experiencia</a></li>
+                    <li><a>Trabajemos juntos</a></li>
+                </ol>
+            </nav>
+        </div>
     </header>
     <section>
         <h1>¡Hey! Soy <strong>José Cuevas</strong>,<br> <strong>desarollador</strong> de día, <strong>profesor</strong> de noche.<br> Apasionado de los videojuegos, el cine y la cerveza.</h1>
-        <img> IMAGEN
+        <img src="./img/hero.jpg" width="500px" alt="hero">
     </section>
     <section>
         <h2>Portafolio</h2>
@@ -28,18 +34,26 @@
             <p><small><strong>Fecha:</strong> 20/11/2017</small></p>
             <p><small><strong>Puedes verlo en:</strong> <a>www.continiu.com</a></small></p>
             <p>Pequeño proyecto que llevaba junto a un amigo en el cual hablabamos de videojuegos y entretenimiento en general</p>
+            <img src="./img/continiu.png" width="500px" alt="continiu.com">
         </article>
     </section>
     <section>
         <h2>Beer experience</h2>
         <figure>
-            <img>
+            <img src="./img/red_ale.jpg" width="500px" alt="red ale beer">
         </figure>
         <h3>Guinness Draught</h3>
         <p>Una cerveza clásica del Reino Unido, una parada obligatoria para cualquiera que se considere amante de la cerveza</p>
         <a>Mi opinión completa</a>
     </section>
-    <section>Sección Contacto</section>
+    <section>
+        <form action="/suscripcion">
+            <label for="email">¿Creamos algo juntos?</label>
+            <input type="email" placeholder="Déjame tu email" id="email">
+            <button>Enviar</button>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
     <footer>Footer</footer>   
 </body>
 </html>
