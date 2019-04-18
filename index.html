@@ -9,9 +9,9 @@
     <link rel="icon" type="image/png" href="./img/favicon.png">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div>
-            <figure>
+            <figure class="logo">
                 <img width="50px" src="./img/logo-white.png" alt="Logo">
             </figure>
             <nav>
@@ -23,37 +23,41 @@
             </nav>
         </div>
     </header>
-    <section>
+    <section class="hero">
         <h1>¡Hey! Soy <strong>José Cuevas</strong>,<br> <strong>desarollador</strong> de día, <strong>profesor</strong> de noche.<br> Apasionado de los videojuegos, el cine y la cerveza.</h1>
         <img src="./img/hero.jpg" width="500px" alt="hero">
     </section>
-    <section id="portafolio">
+    <section id="portafolio" class="portfolio">
         <h2>Portafolio</h2>
-        <article>
-            <h3>Continiu Podcast</h3>
-            <h6>HTML | CSS | JavaScript</h6>
-            <p><small><strong>Fecha:</strong> 20/11/2017</small></p>
-            <p><small><strong>Puedes verlo en:</strong> <a href="http://continiu.com" target="_blank">www.continiu.com</a></small></p>
-            <p>Pequeño proyecto que llevaba junto a un amigo en el cual hablabamos de videojuegos y entretenimiento en general</p>
-            <img src="./img/continiu.png" width="500px" alt="continiu.com">
+        <article class="project">
+            <h3 class="project-title">Continiu Podcast</h3>
+            <h6 class="project-subtitle">HTML | CSS | JavaScript</h6>
+            <p class="project-date"><small><strong>Fecha:</strong> 20/11/2017</small></p>
+            <p class="project-url"><small><strong>Puedes verlo en:</strong> <a href="http://continiu.com" target="_blank">www.continiu.com</a></small></p>
+            <p class="project-description">Pequeño proyecto que llevaba junto a un amigo en el cual hablabamos de videojuegos y entretenimiento en general</p>
+            <figure class="project-imageContainer">
+                <img class="project-image" src="./img/continiu.png" width="500px" alt="continiu.com">
+            </figure>
         </article>
     </section>
     <section id="experiencia">
         <h2>Beer experience</h2>
-        <figure>
-            <img src="./img/red_ale.jpg" width="500px" alt="red ale beer">
-        </figure>
-        <h3>Guinness Draught</h3>
-        <p>Una cerveza clásica del Reino Unido, una parada obligatoria para cualquiera que se considere amante de la cerveza</p>
-        <a>Mi opinión completa</a>
+        <article class="experience">
+            <figure class="experience-imageContainer">
+                <img class="experience-image" src="./img/red_ale.jpg" width="500px" alt="red ale beer">
+            </figure>
+            <h3 class="experience-title">Guinness Draught</h3>
+            <p class="experience-description">Una cerveza clásica del Reino Unido, una parada obligatoria para cualquiera que se considere amante de la cerveza</p>
+            <a class="experience-url">Mi opinión completa</a>
+        </article>
     </section>
-    <section id="contacto">
-        <form action="/suscripcion">
+    <section id="contacto" class="contact">
+        <form action="/suscripcion" class="contact-form">
             <h3>¿Creamos algo juntos?</h3>
             <input type="email" placeholder="Déjame tu email" id="email">
             <input type="submit" value="Enviar">
         </form>
     </section>
-    <footer>Footer</footer>   
+    <footer class="footer">Footer</footer>   
 </body>
 </html>
