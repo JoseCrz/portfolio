@@ -10,12 +10,32 @@ h1 {
     font-size: 40px;
     line-height: 1.5;
     letter-spacing: -.2px;
+    color: #fafafa;
     /* text-transform: uppercase;
     text-decoration: underline; */
 }
 
+strong {
+    color: #64ffda;
+}
+
+.header {
+    background-color: #00796B;
+    color: #fafafa;
+}
+
+.header a {
+    color: #fafafa;
+    text-decoration: none;
+}
+
 .hero {
     height: 300px;
+    background-image: url('../img/hero.jpg');
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-color: #009688;
 }
 
 .project-details {
