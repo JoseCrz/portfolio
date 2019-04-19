@@ -16,9 +16,23 @@ h1 {
     text-decoration: underline; */
 }
 
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
 .header {
+    height: 65px;
     background-color: #00796B;
     color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header a {
@@ -26,6 +40,26 @@ h1 {
     text-decoration: none;
 }
 
+.menu {
+    height: inherit;
+}
+
+.menu ol{
+    display: flex;
+    height: inherit;
+    align-items: center;
+}
+
+.menu ol li {
+    height: inherit;
+}
+
+.menu ol li a {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
 
 .hero {
     height: 300px;
