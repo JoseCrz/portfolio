@@ -12,6 +12,7 @@ h1 {
     line-height: 1.5;
     letter-spacing: -.2px;
     color: #fafafa;
+    margin: 0;
     /* text-transform: uppercase;
     text-decoration: underline; */
 }
@@ -68,6 +69,8 @@ figure {
     background-repeat: no-repeat;
     background-position-x: right;
     background-color: #009688;
+    display: flex;
+    align-items: center;
 }
 
 .hero strong {
@@ -97,4 +100,17 @@ figure {
 
 .project-imageContainer {
     width: 500px;
+}
+
+.footer {
+    background-color: #00796B;
+    color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer a {
+    color: #fafafa;
+    text-decoration: none;
 }
