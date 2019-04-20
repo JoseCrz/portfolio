@@ -1,6 +1,7 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
+    background-color: #eceff1;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -135,6 +136,50 @@ figure {
 
 .project-imageContainer {
     width: 500px;
+}
+
+.experience-list {
+    display: flex;
+}
+
+.experience-list-title{
+    margin-left: 20px
+}
+
+.experience {
+    margin: 10px;
+    width: 480px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: #e0f2f1;
+}
+
+.experience img {
+    width: 480px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.experience-details {
+    padding: 20px;
+    margin: 20px 30px;
+    margin-top: -40px;
+    background-color: #fafafa;
+    position: relative;
+    text-align: center;
+}
+
+.experience-description {
+    text-align: left;
+}
+
+.experience-url {
+    color: #009688;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 20px;
+    text-decoration: none;
 }
 
 .footer {
