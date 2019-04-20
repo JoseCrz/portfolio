@@ -17,6 +17,19 @@ h1 {
     text-decoration: underline; */
 }
 
+h1, h1 strong, h3 {
+    font-weight: 400;
+}
+
+h2 {
+    color: #009688;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 35px;
+}
+
 ol, ul {
     margin: 0;
     padding: 0;
@@ -79,6 +92,7 @@ figure {
 
 .portfolio {
     background-color: #eceff1;
+    padding: 20px;
 }
 
 .project {
@@ -87,15 +101,36 @@ figure {
     border-color: red; */
     border: 1px solid gray;
     border-radius: 10px;
-    margin: 10px;
     margin-bottom: 10px;
     padding: 20px;
     background-color: #fafafa;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project strong {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .project-details {
     width: 500px;
+}
+
+.project-title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-subtitle,
+.project-date,
+.project-url {
+    margin: 10px 0;
+}
+
+.project-description {
+    font-size: 20px;
 }
 
 .project-imageContainer {
