@@ -11,110 +11,124 @@
 </head>
 <body>
     <header class="header">
-        <figure class="logo">
-            <img width="50px" src="./img/logo-white.png" alt="Logo">
-        </figure>
-        <nav class="menu">
-            <ol>
-                <li><a href="#portafolio">Portafolio</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#contacto">Trabajemos juntos</a></li>
-            </ol>
-        </nav>
+        <div class="wrapper">
+            <figure class="logo">
+                <img width="50px" src="./img/logo-white.png" alt="Logo">
+            </figure>
+            <nav class="menu">
+                <ol>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#contacto">Trabajemos juntos</a></li>
+                </ol>
+            </nav>
+        </div>
     </header>
     <section class="hero">
-        <h1>¡Hey! Soy <strong>José Cuevas</strong>,<br> <strong>desarollador</strong> de día, <strong>profesor</strong> de noche.<br> Apasionado de los videojuegos, el cine y la cerveza.</h1>
-        <!-- <img src="./img/hero.jpg" width="500px" alt="hero"> -->
+        <div class="wrapper">
+            <h1>¡Hey! Soy <strong>José Cuevas</strong>,<br> <strong>desarollador</strong> de día, <strong>profesor</strong> de noche.<br> Apasionado de los videojuegos, el cine y la cerveza.</h1>
+            <img class="hero-image" src="./img/hero.jpg" width="600px" height="400px" alt="hero">
+        </div>
     </section>
     <section id="portafolio" class="portfolio">
-        <h2>Portafolio</h2>
-        <article class="project">
-            <div class="project-details">
-                <h3 class="project-title">Continiu Podcast</h3>
-                <h6 class="project-subtitle">HTML | CSS | JavaScript</h6>
-                <p class="project-date"><small><strong>Fecha:</strong> 20/11/2017</small></p>
-                <p class="project-url"><small><strong>Puedes verlo en:</strong> <a href="http://continiu.com" target="_blank">www.continiu.com</a></small></p>
-                <p class="project-description">Pequeña landing page Continiu Podcast, un proyecto personal que llevaba junto con uno de mis mejores amigos; en el podcast hablabamos principalmente de videojuegos, cine y entretenimiento general. Actualmente se encuentra pausado por cuestiones de tiempos.</p>
-            </div>
-            <figure class="project-imageContainer">
-                <img class="project-image" src="./img/continiu.png" width="500px" alt="continiu.com">
-            </figure>
-        </article>
-        <article class="project">
-            <div class="project-details">
-                <h3 class="project-title">Continiu Podcast</h3>
-                <h6 class="project-subtitle">HTML | CSS | JavaScript</h6>
-                <p class="project-date"><small><strong>Fecha:</strong> 20/11/2017</small></p>
-                <p class="project-url"><small><strong>Puedes verlo en:</strong> <a href="http://continiu.com" target="_blank">www.continiu.com</a></small></p>
-                <p class="project-description">Pequeña landing page Continiu Podcast, un proyecto personal que llevaba junto con uno de mis mejores amigos; en el podcast hablabamos principalmente de videojuegos, cine y entretenimiento general. Actualmente se encuentra pausado por cuestiones de tiempos.</p>
-            </div>
-            <figure class="project-imageContainer">
-                <img class="project-image" src="./img/continiu.png" width="500px" alt="continiu.com">
-            </figure>
-        </article>
+        <div class="wrapper">
+            <h2>Portafolio</h2>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Continiu Podcast</h3>
+                    <h6 class="project-subtitle">HTML | CSS | JavaScript</h6>
+                    <p class="project-date"><small><strong>Fecha:</strong> 20/11/2017</small></p>
+                    <p class="project-url"><small><strong>Puedes verlo en:</strong> <a href="http://continiu.com" target="_blank">www.continiu.com</a></small></p>
+                    <p class="project-description">Pequeña landing page Continiu Podcast, un proyecto personal que llevaba junto con uno de mis mejores amigos; en el podcast hablabamos principalmente de videojuegos, cine y entretenimiento general. Actualmente se encuentra pausado por cuestiones de tiempos.</p>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="./img/continiu.png" width="500px" alt="continiu.com">
+                </figure>
+            </article>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Continiu Podcast</h3>
+                    <h6 class="project-subtitle">HTML | CSS | JavaScript</h6>
+                    <p class="project-date"><small><strong>Fecha:</strong> 20/11/2017</small></p>
+                    <p class="project-url"><small><strong>Puedes verlo en:</strong> <a href="http://continiu.com" target="_blank">www.continiu.com</a></small></p>
+                    <p class="project-description">Pequeña landing page Continiu Podcast, un proyecto personal que llevaba junto con uno de mis mejores amigos; en el podcast hablabamos principalmente de videojuegos, cine y entretenimiento general. Actualmente se encuentra pausado por cuestiones de tiempos.</p>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="./img/continiu.png" width="500px" alt="continiu.com">
+                </figure>
+            </article>
+        </div>
     </section>
-    <h2 class="experience-list-title">Beer experience</h2>
+    <div class="wrapper">
+        <h2 class="experience-list-title">Beer experience</h2>
+    </div>
     <section id="experiencia" class="experience-list">
-        <article class="experience">
-            <figure class="experience-imageContainer">
-                <img class="experience-image" src="./img/red_ale.jpg" width="500px" alt="red ale beer">
-            </figure>
-            <div class="experience-details">
-                <h3 class="experience-title">Guinness Draught</h3>
-                <p class="experience-description">Una cerveza clásica del Reino Unido, una parada obligatoria para cualquiera que se considere amante de la cerveza.</p>
-                <a class="experience-url">Mi opinión completa</a>
-            </div>
-        </article>
-        <article class="experience">
-            <figure class="experience-imageContainer">
-                <img class="experience-image" src="./img/red_ale.jpg" width="500px" alt="red ale beer">
-            </figure>
-            <div class="experience-details">
-                <h3 class="experience-title">Guinness Draught</h3>
-                <p class="experience-description">Una cerveza clásica del Reino Unido, una parada obligatoria para cualquiera que se considere amante de la cerveza.</p>
-                <a class="experience-url">Mi opinión completa</a>
-            </div>
-        </article>
-        <article class="experience">
-            <figure class="experience-imageContainer">
-                <img class="experience-image" src="./img/red_ale.jpg" width="500px" alt="red ale beer">
-            </figure>
-            <div class="experience-details">
-                <h3 class="experience-title">Guinness Draught</h3>
-                <p class="experience-description">Una cerveza clásica del Reino Unido, una parada obligatoria para cualquiera que se considere amante de la cerveza.</p>
-                <a class="experience-url">Mi opinión completa</a>
-            </div>
-        </article>
-        <article class="experience">
-            <figure class="experience-imageContainer">
-                <img class="experience-image" src="./img/red_ale.jpg" width="500px" alt="red ale beer">
-            </figure>
-            <div class="experience-details">
-                <h3 class="experience-title">Guinness Draught</h3>
-                <p class="experience-description">Una cerveza clásica del Reino Unido, una parada obligatoria para cualquiera que se considere amante de la cerveza.</p>
-                <a class="experience-url">Mi opinión completa</a>
-            </div>
-        </article>
+        <div class="wrapper">
+            <article class="experience">
+                <figure class="experience-imageContainer">
+                    <img class="experience-image" src="./img/red_ale.jpg" width="500px" alt="red ale beer">
+                </figure>
+                <div class="experience-details">
+                    <h3 class="experience-title">Guinness Draught</h3>
+                    <p class="experience-description">Una cerveza clásica del Reino Unido, una parada obligatoria para cualquiera que se considere amante de la cerveza.</p>
+                    <a class="experience-url">Mi opinión completa</a>
+                </div>
+            </article>
+            <article class="experience">
+                <figure class="experience-imageContainer">
+                    <img class="experience-image" src="./img/red_ale.jpg" width="500px" alt="red ale beer">
+                </figure>
+                <div class="experience-details">
+                    <h3 class="experience-title">Guinness Draught</h3>
+                    <p class="experience-description">Una cerveza clásica del Reino Unido, una parada obligatoria para cualquiera que se considere amante de la cerveza.</p>
+                    <a class="experience-url">Mi opinión completa</a>
+                </div>
+            </article>
+            <article class="experience">
+                <figure class="experience-imageContainer">
+                    <img class="experience-image" src="./img/red_ale.jpg" width="500px" alt="red ale beer">
+                </figure>
+                <div class="experience-details">
+                    <h3 class="experience-title">Guinness Draught</h3>
+                    <p class="experience-description">Una cerveza clásica del Reino Unido, una parada obligatoria para cualquiera que se considere amante de la cerveza.</p>
+                    <a class="experience-url">Mi opinión completa</a>
+                </div>
+            </article>
+            <article class="experience">
+                <figure class="experience-imageContainer">
+                    <img class="experience-image" src="./img/red_ale.jpg" width="500px" alt="red ale beer">
+                </figure>
+                <div class="experience-details">
+                    <h3 class="experience-title">Guinness Draught</h3>
+                    <p class="experience-description">Una cerveza clásica del Reino Unido, una parada obligatoria para cualquiera que se considere amante de la cerveza.</p>
+                    <a class="experience-url">Mi opinión completa</a>
+                </div>
+            </article>
+        </div>
     </section>
     <section id="contacto" class="contact">
-        <form action="/suscripcion" class="contact-form">
-            <h3>¿Creamos algo juntos?</h3>
-            <input type="email" placeholder="Déjame tu email" id="email">
-            <button>Enviar</button>
-        </form>
-        <div class="social">
-            <a href="https://twitter.com/Jose_Crz" class="social-link twitter" target="_blank"></a>
-            <a href="https://www.facebook.com/Josecueram" class="social-link facebook" target="_blank"></a>
-            <a href="https://github.com/JoseCrz" class="social-link github" target="_blank"></a>
-            <a href="https://www.instagram.com/josecrz13/" class="social-link instagram" target="_blank"></a>
+        <div class="wrapper">
+            <form action="/suscripcion" class="contact-form">
+                <h3>¿Creamos algo juntos?</h3>
+                <input type="email" placeholder="Déjame tu email" id="email">
+                <button>Enviar</button>
+            </form>
+            <div class="social">
+                <a href="https://twitter.com/Jose_Crz" class="social-link twitter" target="_blank"></a>
+                <a href="https://www.facebook.com/Josecueram" class="social-link facebook" target="_blank"></a>
+                <a href="https://github.com/JoseCrz" class="social-link github" target="_blank"></a>
+                <a href="https://www.instagram.com/josecrz13/" class="social-link instagram" target="_blank"></a>
+            </div>
         </div>
     </section>
     <footer class="footer">
-        <div>
-            <p>Coding Workshop 2019</p>
-        </div>
-        <div>
-            <p>Powered by <a href="https://www.instagram.com/cafejasonoficial/">Café Jasón</a></p>
+        <div class="wrapper">
+            <div>
+                <p>Coding Workshop 2019</p>
+            </div>
+            <div>
+                <p>Powered by <a href="https://www.instagram.com/cafejasonoficial/">Café Jasón</a></p>
+            </div>
         </div>
     </footer>   
 </body>

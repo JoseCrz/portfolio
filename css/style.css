@@ -41,6 +41,16 @@ figure {
     margin: 0;
 }
 
+.wrapper {
+    width: 1390px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
 .header {
     height: 65px;
     background-color: #00796B;
@@ -77,14 +87,19 @@ figure {
 }
 
 .hero {
-    height: 300px;
-    background-image: url('../img/hero.jpg');
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
-    background-position-x: right;
+    height: 400px;
+    /* background-image: url('../img/hero.jpg'); */
+    /* background-size: 500px 300px; */
+    /* background-repeat: no-repeat; */
+    /* background-position-x: right; */
     background-color: #009688;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image {
+    object-fit: cover;
 }
 
 .hero strong {
@@ -140,6 +155,8 @@ figure {
 
 .experience-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .experience-list-title{
