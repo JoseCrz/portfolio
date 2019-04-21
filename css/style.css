@@ -182,6 +182,65 @@ figure {
     text-decoration: none;
 }
 
+.contact {
+    background-color: #009688;
+    color: #fafafa;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-form input {
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-image: url('../img/envelope.svg');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.contact-form button {
+    display: block;
+    background: transparent;
+    color: #fafafa;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.contact-form h3 {
+    font-weight: bold;
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+
+.social-link.twitter {
+    background-image: url('../img/twitter.svg');
+}
+
+.social-link.facebook {
+    background-image: url('../img/facebook.svg');
+}
+
+.social-link.github {
+    background-image: url('../img/github.svg');
+}
+
+.social-link.instagram {
+    background-image: url('../img/instagram.svg');
+}
+
 .footer {
     background-color: #00796B;
     color: #fafafa;
