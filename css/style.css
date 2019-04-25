@@ -42,7 +42,7 @@ figure {
 }
 
 .wrapper {
-    width: 1390px;
+    max-width: 1390px;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -58,6 +58,7 @@ figure {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .header a {
@@ -96,6 +97,7 @@ figure {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero-image {
@@ -123,6 +125,7 @@ figure {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .project strong {
@@ -206,6 +209,7 @@ figure {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .contact-form input {
@@ -264,6 +268,7 @@ figure {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer a {
