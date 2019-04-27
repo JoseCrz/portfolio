@@ -136,7 +136,7 @@ figure {
 }
 
 .project-details {
-    width: 500px;
+    width: 50%;
 }
 
 .project-title {
@@ -156,7 +156,11 @@ figure {
 }
 
 .project-imageContainer {
-    width: 500px;
+    width: 50%;
+}
+
+.project-imageContainer img {
+    max-width: 100%;
 }
 
 .experience-list {
@@ -304,9 +308,54 @@ figure {
     .header .logo {
         text-align: center;
     }
+
+    
+    .project {
+        display: block;
+    }
+    
+    .project-imageContainer {
+        width: auto;
+        text-align: center;
+    }
+
+    
+    .project-details {
+        width: auto;
+        font-size: 16px;
+    }
+    
+    /* 767px Media Query */
+    .project-subtitle, .project-date, .project-url {
+        margin: .3em 0;
+    }
+
+    .project-title {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+
+    .project-subtitle {
+        font-size: .8em;
+    }
+
+    .project-date {
+        font-size: 1em;
+    }
+
+    .project-url {
+        font-size: 1em;
+    }
+
+    .project-description {
+        font-size: .9em;
+    }
 }
 
 @media screen and (max-width: 480px) {
+    .project-details {
+        font-size: 14px;
+    }
 
 }
 
