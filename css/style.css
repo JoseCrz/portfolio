@@ -47,6 +47,7 @@ figure {
     /* width: 100%; */
     flex: 1;
     margin: 0 auto;
+    padding: 0 .8em;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
@@ -373,8 +374,30 @@ figure {
         margin: -2em .5em .5em .5em;
         padding: 1em;
     }
+
+    .contact {
+        height: auto;
+        padding: 1em 0;
+        text-align: center;
+        display: block;
+    }
+    
+    .contact-form button {
+        margin: 1em auto;
+        font-size: 16px;
+    }
+    
+    /* 480px Media Query */
+    .contact-form h3 {
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 320px) {
-
+    .footer {
+        display: block;
+        text-align: center;
+        /* padding: 1px; */
+        border: 1px solid transparent;
+    }
 }
