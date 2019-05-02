@@ -174,8 +174,8 @@ figure {
 }
 
 .experience {
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     border-radius: 10px;
     overflow: hidden;
     flex-shrink: 0;
@@ -325,31 +325,42 @@ figure {
         font-size: 16px;
     }
     
-    /* 767px Media Query */
     .project-subtitle, .project-date, .project-url {
         margin: .3em 0;
     }
-
+    
     .project-title {
         font-size: 1.5em;
         margin-bottom: .3em;
     }
-
+    
     .project-subtitle {
         font-size: .8em;
     }
-
+    
     .project-date {
         font-size: 1em;
     }
-
+    
     .project-url {
         font-size: 1em;
     }
-
+    
     .project-description {
         font-size: .9em;
     }
+
+    /* 767px Media Query */
+
+    .experience {
+        width: auto;
+        flex-shrink: initial;
+    }
+
+    .experience img {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -357,6 +368,11 @@ figure {
         font-size: 14px;
     }
 
+    .experience-details {
+        /* 1em = 16px */
+        margin: -2em .5em .5em .5em;
+        padding: 1em;
+    }
 }
 
 @media screen and (max-width: 320px) {
