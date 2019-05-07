@@ -387,15 +387,38 @@ figure {
         height: 50px;
     }
 
+    /* 767px Media Query */
     .header a {
         justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom: .5em;
     }
 
     .header .logo {
         text-align: center;
     }
 
-    /* 767px Media Query */
+    .menu {
+        position: fixed;
+        background: rgba(0, 121, 107, .9);
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        bottom: 0;
+        width: 100vw;
+        /* height: 100vh; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
     .hero {
         padding: 6em 2em;
     }
