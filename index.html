@@ -157,13 +157,24 @@
         </div>
     </footer>
     <script>
-
         const burgerButton = document.getElementById('burger-button')
         const menu = document.querySelector('.menu')
+        const mediaQuery = window.matchMedia('screen and (max-width: 767px)')
 
         console.log(burgerButton, menu)
+        console.log(mediaQuery)
 
-        burgerButton.addEventListener('click', toggle)
+        mediaQuery.addListener(validation)
+
+        function validation (event) {
+            if (event.matches) {
+                
+                burgerButton.addEventListener('click', toggle)
+            } else {
+
+                burgerButton.removeEventListener('click', toggle)
+            }
+        }
 
         function toggle () {
             if (menu.classList.contains('active')) {
@@ -175,6 +186,7 @@
             }
         }
 
+        validation(mediaQuery)
     </script>
 </body>
 </html>
