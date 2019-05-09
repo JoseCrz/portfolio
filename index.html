@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" href="./img/favicon.png">
 </head>
 <body>
-    <i class="icon-menu burger-button"></i>
+    <i class="icon-menu burger-button" id="burger-button"></i>
     <header class="header">
         <div class="wrapper">
             <figure class="logo">
@@ -156,5 +156,25 @@
             </div>
         </div>
     </footer>
+    <script>
+
+        const burgerButton = document.getElementById('burger-button')
+        const menu = document.querySelector('.menu')
+
+        console.log(burgerButton, menu)
+
+        burgerButton.addEventListener('click', toggle)
+
+        function toggle () {
+            if (menu.classList.contains('active')) {
+                
+                menu.classList.remove('active') 
+            } else {
+                
+                menu.classList.add('active')
+            }
+        }
+
+    </script>
 </body>
 </html>
