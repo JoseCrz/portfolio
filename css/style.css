@@ -388,7 +388,6 @@ figure {
         height: 50px;
     }
 
-    /* 767px Media Query */
     .header a {
         justify-content: center;
         height: 40px;
@@ -396,11 +395,11 @@ figure {
         text-decoration: underline;
         margin-bottom: .5em;
     }
-
+    
     .header .logo {
         text-align: center;
     }
-
+    
     .menu {
         position: fixed;
         background: rgba(0, 121, 107, .9);
@@ -415,15 +414,15 @@ figure {
         justify-content: center;
         transition: .3s;
     }
-
+    
     .menu.active {
         left: 0;
     }
-
+    
     .hero {
         padding: 6em 2em;
     }
-
+    
     
     .project {
         display: block;
@@ -433,7 +432,7 @@ figure {
         width: auto;
         text-align: center;
     }
-
+    
     
     .project-details {
         width: auto;
@@ -461,10 +460,11 @@ figure {
         font-size: 1em;
     }
     
+    /* 767px Media Query */
     .project-description {
-        font-size: .9em;
+        font-size: 1em;
     }
-
+    
     .experience {
         width: auto;
         flex-shrink: initial;
@@ -478,12 +478,16 @@ figure {
 
 @media screen and (max-width: 480px) {
     
+    h2 {
+        margin-bottom: .5em;
+    }
+    
     .hero {
         padding: 4em 2em;
     }
     
     .project-details {
-        font-size: 14px;
+        font-size: 1em;
     }
 
     .experience-details {
