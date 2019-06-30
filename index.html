@@ -19,9 +19,9 @@
             </figure>
             <nav class="menu">
                 <ol>
-                    <li><a href="#portafolio">Portafolio</a></li>
-                    <li><a href="#experiencia">Experiencia</a></li>
-                    <li><a href="#contacto">Trabajemos juntos</a></li>
+                    <li><a class="menu-link" href="#portafolio">Portafolio</a></li>
+                    <li><a class="menu-link" href="#experiencia">Experiencia</a></li>
+                    <li><a class="menu-link" href="#contacto">Trabajemos juntos</a></li>
                 </ol>
             </nav>
         </div>
@@ -163,19 +163,28 @@
         const burgerButton = document.getElementById('burger-button')
         const menu = document.querySelector('.menu')
         const mediaQuery = window.matchMedia('screen and (max-width: 767px)')
+        const menuLinks = document.querySelectorAll('.menu-link')
 
-        console.log(burgerButton, menu)
-        console.log(mediaQuery)
+        // console.log(burgerButton, menu)
+        // console.log(mediaQuery)
+        // console.log(menuLinks)
 
         mediaQuery.addListener(validation)
+
 
         function validation (event) {
             if (event.matches) {
                 
                 burgerButton.addEventListener('click', toggle)
+                for (let i = 0; i < 3; i++) {
+                    menuLinks.item(i).addEventListener('click', toggle)
+                }
             } else {
 
                 burgerButton.removeEventListener('click', toggle)
+                for (let i = 0; i < 3; i++) {
+                    menuLinks.item(i).removeEventListener('click', toggle)
+                }
             }
         }
 
