@@ -18,9 +18,13 @@ p {
 // ? VARIABLES
 $shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
 $border-radius: 2px;
+$color-element: #fff;
+$color-text: black;
 
 // ? UTILITIES
 @import './utils/wrapper';
 
 // ? COMPONENTS
 @import './components/me';
+@import './components/recent';
+@import './components/card';

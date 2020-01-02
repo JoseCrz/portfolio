@@ -65,4 +65,63 @@ p {
   font-size: 1.5em;
   margin: 0;
 }
+
+.c-recent {
+  background: #fff;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.c-recent__cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.c-card {
+  max-width: 195px;
+  border-radius: 2px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: black;
+}
+
+.c-card__img {
+  width: 100%;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.c-card__top {
+  position: relative;
+}
+
+.c-card__bottom {
+  padding: 0 10px;
+}
+
+.c-card__info {
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(58, 60, 63, 0.9);
+  color: white;
+  text-align: center;
+}
+
+.c-card__title {
+  letter-spacing: 1px;
+  margin: 0;
+}
 /*# sourceMappingURL=style.css.map */

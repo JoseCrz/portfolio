@@ -1,0 +1,11 @@
+.c-recent {
+    background: $color-element;
+    border-radius: $border-radius;
+    box-shadow: $shadow;
+    padding: 10px;
+
+    &__cards-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
