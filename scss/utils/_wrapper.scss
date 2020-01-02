@@ -1,0 +1,8 @@
+.u-wrapper {
+    max-width: 1024px;
+    border: 1px solid black;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}

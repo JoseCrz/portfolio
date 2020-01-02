@@ -1,2 +1,2 @@
-*{-webkit-box-sizing:border-box;box-sizing:border-box}body{margin:0;padding:0}
+*{-webkit-box-sizing:border-box;box-sizing:border-box}body{margin:0;padding:0;background:#F6F6F6}.u-wrapper{max-width:1024px;border:1px solid black;margin:0 auto;display:-ms-grid;display:grid;-ms-grid-columns:1fr 1fr;grid-template-columns:1fr 1fr;gap:10px}
 /*# sourceMappingURL=style.min.css.map */
