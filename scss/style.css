@@ -91,6 +91,18 @@ p {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   text-decoration: none;
   color: black;
+  -webkit-transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s;
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s;
+}
+
+.c-card:hover {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+.c-card:active {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
 }
 
 .c-card__img {
