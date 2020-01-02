@@ -15,7 +15,7 @@
             <img class="c-me__image" src="./img/profile.jpg" alt="Profile Picture">
             <div class="c-me__text-container">
                 <h1 class="c-me__title">José Cuevas</h1>
-                <h2 class="c-me__subtitle">Front-end Web Developer</h2>
+                <h2 class="c-me__subtitle">Front-End Web Developer</h2>
                 <p class="c-me__description">24 years, mexican.</p>
             </div>
         </section>
@@ -58,20 +58,30 @@
             </div>
         </section>
         <section class="c-contact">
-            <p class="c-contact__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta eius eum, magnam qui molestias odio impedit commodi a, quos dolorum, illum asperiores eligendi dolore vel dolorem fuga perspiciatis sequi accusantium.</p>
+            <div class="c-contact__text">
+                <h2 class="c-contact__title">I'm a
+                    <!-- <span class="typer" id="main" data-words="passionate programmer" data-delay="100" data-deleteDelay="1000" data-loop=true data-colors="#3f51b5, yellow"></span>
+                    <span class="cursor" data-owner="main"></span> -->
+                </h2>
+                <p class="c-contact__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vero non itaque. Commodi atque, autem rem vero consequatur neque ex illum maiores consequuntur, sed non doloribus? Quas neque pariatur labore quod magni deleniti dignissimos velit mollitia, inventore adipisci aspernatur minus, cum ipsum voluptas facere nam fugiat iure ipsam iste repellendus!</p>
+            </div>
             <div class="c-contact__bullets">
                 <div class="c-contact__bullet">
-                    <img src="" alt="" class="c-contact__bullet-img">
-                    <p class="c-contact__bullet-description"></p>
+                    <img src="./img/mail.svg" alt="" class="c-contact__bullet-img">
+                    <a href="mailto:josecueram@gmail.com" class="c-contact__bullet-description">josecueram@gmail.com</a>
                 </div>
                 <div class="c-contact__bullet">
-                    <img src="" alt="" class="c-contact__bullet-img">
-                    <p class="c-contact__bullet-description"></p>
+                    <img src="./img/github-logo.svg" alt="" class="c-contact__bullet-img">
+                    <a href="https://github.com/JoseCrz" target="_blank" class="c-contact__bullet-description">@josecrz</a>
+                </div>
+                <div class="c-contact__bullet">
+                    <img src="./img/internet.svg" alt="" class="c-contact__bullet-img">
+                    <a href="https://dobletaptap.com" target="_blank" class="c-contact__bullet-description">www.dobletaptap.com</a>
                 </div>
             </div>
         </section>
         <section class="c-skills">
-
+            <h2 class="c-skills__title">Skill set</h2>
         </section>
         <section class="c-hobbies">
             <div class="c-hobbies__item">
@@ -139,6 +149,7 @@
             </div>
         </section>
     </div>
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
     <script>
         const burgerButton = document.getElementById('burger-button')
         const menu = document.querySelector('.menu')

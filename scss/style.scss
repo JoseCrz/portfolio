@@ -1,3 +1,11 @@
+// ? VARIABLES
+$shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+$border-radius: 2px;
+$color-element: #fff;
+$color-text: black;
+$font-titles: 'Lato', sans-serif;
+$font-texts: 'Open Sans', sans-serif;
+
 * {
     box-sizing: border-box;
 }
@@ -9,22 +17,19 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
+    font-family: $font-titles;
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-texts;
 }
-// ? VARIABLES
-$shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
-$border-radius: 2px;
-$color-element: #fff;
-$color-text: black;
 
 // ? UTILITIES
 @import './utils/wrapper';
+@import './utils/reset';
 
 // ? COMPONENTS
 @import './components/me';
 @import './components/recent';
 @import './components/card';
+@import './components/contact';

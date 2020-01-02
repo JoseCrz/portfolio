@@ -1,0 +1,28 @@
+.c-contact {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: $color-element;
+    box-shadow: $shadow;
+    border-radius: $border-radius;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    align-items: center;
+
+    &__bullet {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+
+        &-img {
+            width: 50px;
+        }
+
+        &-description {
+            font-family: $font-texts;
+            margin-left: 10px;
+            text-decoration: none;
+            color: $color-text;
+        }
+    }
+}
