@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
   .u-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+        grid-template-areas: "me" "recent" "contact" "skills" "workshops" "projects" "hobbies" "footer";
   }
 }
 
@@ -255,6 +256,7 @@ textarea {
   background-size: cover;
   color: white;
   padding: 0 5px;
+  grid-area: me;
 }
 
 .c-me__image {
@@ -289,6 +291,7 @@ textarea {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   padding: 10px;
+  grid-area: recent;
 }
 
 .c-recent__title {
@@ -381,6 +384,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  grid-area: contact;
 }
 
 .c-contact__bullet {
@@ -420,6 +424,7 @@ textarea {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   padding: 10px;
+  grid-area: skills;
 }
 
 .c-skills__title {
@@ -440,6 +445,7 @@ textarea {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   padding: 10px;
+  grid-area: hobbies;
 }
 
 .c-hobbies__title {
@@ -487,6 +493,7 @@ textarea {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
+  grid-area: workshops;
 }
 
 .c-workshops__title {
@@ -527,6 +534,7 @@ textarea {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
+  grid-area: projects;
 }
 
 .c-projects__title {
@@ -603,5 +611,6 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  grid-area: footer;
 }
 /*# sourceMappingURL=style.css.map */

@@ -8,5 +8,13 @@
 
     @include phone {
         grid-template-columns: 1fr;
+        grid-template-areas: "me"
+                             "recent"
+                             "contact"
+                             "skills"
+                             "workshops"
+                             "projects"
+                             "hobbies"
+                             "footer";
     }
 }
