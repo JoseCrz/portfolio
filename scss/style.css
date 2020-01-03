@@ -14,6 +14,30 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
 }
 
+.color--green {
+  color: #63C481;
+}
+
+.color--blue {
+  color: #55B5DE;
+}
+
+.color--purple {
+  color: #C352AD;
+}
+
+.color--orange {
+  color: #E87834;
+}
+
+.color--yellow {
+  color: #F1C05E;
+}
+
+.color--red {
+  color: #E36054;
+}
+
 .u-wrapper {
   max-width: 1280px;
   margin: 0 auto;
@@ -249,16 +273,15 @@ textarea {
 }
 
 .c-recent__cards-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
 .c-card {
-  max-width: 195px;
+  max-width: 100%;
   border-radius: 2px;
   overflow: hidden;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
@@ -440,5 +463,65 @@ textarea {
 .c-workshops__image {
   width: 100%;
   border-radius: 2px;
+}
+
+.c-projects {
+  background: #fff;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.c-projects__title {
+  text-align: center;
+}
+
+.c-projects__cards-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 15px;
+}
+
+.c-projects__button-container {
+  margin: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-projects__button {
+  text-decoration: none;
+  background: #63C481;
+  color: white;
+  font-size: 1.5em;
+  padding: 12px 24px;
+  border-radius: 3px;
+  border-bottom: 5px solid #43b165;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  -webkit-transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s;
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s;
+}
+
+.c-projects__button:hover {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+.c-projects__button:active {
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  background: #3c9f5a;
+  border-bottom: 5px solid #2e7a45;
 }
 /*# sourceMappingURL=style.css.map */

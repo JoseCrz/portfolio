@@ -5,6 +5,12 @@ $color-element: #fff;
 $color-text: black;
 $font-titles: 'Lato', sans-serif;
 $font-texts: 'Open Sans', sans-serif;
+$color-green: #63C481;
+$color-blue: #55B5DE;
+$color-purple: #C352AD;
+$color-orange: #E87834;
+$color-yellow: #F1C05E;
+$color-red: #E36054;
 
 * {
     box-sizing: border-box;
@@ -21,6 +27,32 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $font-titles;
 }
 
+.color {
+    &--green {
+        color: $color-green;
+    }
+
+    &--blue {
+        color: $color-blue
+    }
+
+    &--purple {
+        color: $color-purple;
+    }
+
+    &--orange {
+        color: $color-orange;
+    }
+
+    &--yellow {
+        color: $color-yellow;
+    }
+
+    &--red {
+        color: $color-red;
+    }
+}
+
 // ? UTILITIES
 @import './utils/wrapper';
 @import './utils/reset';
@@ -33,3 +65,4 @@ h1, h2, h3, h4, h5, h6 {
 @import './components/skills';
 @import './components/hobbies';
 @import './components/workshops';
+@import './components/projects';
