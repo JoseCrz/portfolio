@@ -1,6 +1,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -11,10 +12,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
-}
-
-p {
-  font-family: "Open Sans", sans-serif;
 }
 
 .u-wrapper {
@@ -351,5 +348,25 @@ textarea {
   margin-left: 10px;
   text-decoration: none;
   color: black;
+}
+
+.c-skills {
+  background: #fff;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.c-skills__title {
+  text-align: center;
+}
+
+.c-skills__list {
+  font-size: 1.2em;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */

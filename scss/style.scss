@@ -8,6 +8,7 @@ $font-texts: 'Open Sans', sans-serif;
 
 * {
     box-sizing: border-box;
+    font-family: $font-texts;
 }
 
 body {
@@ -20,10 +21,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $font-titles;
 }
 
-p {
-    font-family: $font-texts;
-}
-
 // ? UTILITIES
 @import './utils/wrapper';
 @import './utils/reset';
@@ -33,3 +30,4 @@ p {
 @import './components/recent';
 @import './components/card';
 @import './components/contact';
+@import './components/skills';
