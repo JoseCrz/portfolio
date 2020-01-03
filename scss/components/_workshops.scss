@@ -20,4 +20,13 @@
         width: 100%;
         border-radius: $border-radius;
     }
+
+    @include phone {
+        grid-column-start: unset;
+        grid-column-end: unset;
+
+        &__image-container {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 }

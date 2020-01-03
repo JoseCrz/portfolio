@@ -26,4 +26,10 @@
             color: $color-text;
         }
     }
+
+    @include phone {
+        grid-column-start: unset;
+        grid-column-end: unset;
+        grid-template-columns: 1fr;
+    }
 }

@@ -5,4 +5,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+
+    @include phone {
+        grid-template-columns: 1fr;
+    }
 }

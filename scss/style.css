@@ -10,6 +10,12 @@ body {
   background: #F6F6F6;
 }
 
+@media screen and (max-width: 540px) {
+  body {
+    padding: 0;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
 }
@@ -30,8 +36,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #E87834;
 }
 
-.color--yellow {
-  color: #F1C05E;
+.color--deep-blue {
+  color: #14379D;
 }
 
 .color--red {
@@ -46,6 +52,13 @@ h1, h2, h3, h4, h5, h6 {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 10px;
+}
+
+@media screen and (max-width: 540px) {
+  .u-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 /**
@@ -264,6 +277,12 @@ textarea {
   margin: 0;
 }
 
+@media screen and (max-width: 540px) {
+  .c-me {
+    font-size: 12px;
+  }
+}
+
 .c-recent {
   background: #fff;
   border-radius: 2px;
@@ -282,6 +301,13 @@ textarea {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+}
+
+@media screen and (max-width: 540px) {
+  .c-recent__cards-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .c-card {
@@ -378,6 +404,16 @@ textarea {
   color: black;
 }
 
+@media screen and (max-width: 540px) {
+  .c-contact {
+    -ms-grid-column: unset;
+        grid-column-start: unset;
+    grid-column-end: unset;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .c-skills {
   background: #fff;
   border-radius: 2px;
@@ -470,6 +506,18 @@ textarea {
   border-radius: 2px;
 }
 
+@media screen and (max-width: 540px) {
+  .c-workshops {
+    -ms-grid-column: unset;
+        grid-column-start: unset;
+    grid-column-end: unset;
+  }
+  .c-workshops__image-container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
 .c-projects {
   background: #fff;
   border-radius: 2px;
@@ -528,6 +576,18 @@ textarea {
           transform: translateY(6px);
   background: #3c9f5a;
   border-bottom: 5px solid #2e7a45;
+}
+
+@media screen and (max-width: 540px) {
+  .c-projects {
+    -ms-grid-column: unset;
+        grid-column-start: unset;
+    grid-column-end: unset;
+  }
+  .c-projects__cards-container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 .c-footer {

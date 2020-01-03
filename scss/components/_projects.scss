@@ -43,4 +43,12 @@
             border-bottom: 5px solid darken($color-green, 25%);
         }
     }
+    @include phone {
+        grid-column-start: unset;
+        grid-column-end: unset;
+
+        &__cards-container {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 }
