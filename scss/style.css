@@ -369,4 +369,44 @@ textarea {
   text-align: center;
   font-weight: 700;
 }
+
+.c-hobbies {
+  background: #fff;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.c-hobbies__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.c-hobbies__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-hobbies__item-image {
+  width: 80px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.c-hobbies__item-description {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2em;
+}
 /*# sourceMappingURL=style.css.map */
