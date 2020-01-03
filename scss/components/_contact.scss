@@ -5,6 +5,7 @@
     box-shadow: $shadow;
     border-radius: $border-radius;
     display: grid;
+    gap: 10px;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
     align-items: center;

@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 10px 0 0 0;
   background: #F6F6F6;
 }
 
@@ -237,8 +237,8 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.55)), to(rgba(0, 0, 0, 0.55))), url("../../img/xalapa.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../../img/xalapa.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.55)), to(rgba(0, 0, 0, 0.55))), url("../img/xalapa.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../img/xalapa.png");
   background-size: cover;
   color: white;
   padding: 0 5px;
@@ -270,6 +270,10 @@ textarea {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   padding: 10px;
+}
+
+.c-recent__title {
+  text-align: center;
 }
 
 .c-recent__cards-container {
@@ -344,6 +348,7 @@ textarea {
   border-radius: 2px;
   display: -ms-grid;
   display: grid;
+  gap: 10px;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   padding: 10px;
@@ -523,5 +528,20 @@ textarea {
           transform: translateY(6px);
   background: #3c9f5a;
   border-bottom: 5px solid #2e7a45;
+}
+
+.c-footer {
+  height: 60px;
+  background: #333333;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

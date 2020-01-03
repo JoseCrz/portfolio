@@ -4,6 +4,10 @@
     box-shadow: $shadow;
     padding: 10px;
 
+    &__title {
+        text-align: center;
+    }
+
     &__cards-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

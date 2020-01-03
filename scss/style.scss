@@ -19,7 +19,7 @@ $color-red: #E36054;
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 10px 0 0 0;
     background: #F6F6F6;
 }
 
@@ -66,3 +66,4 @@ h1, h2, h3, h4, h5, h6 {
 @import './components/hobbies';
 @import './components/workshops';
 @import './components/projects';
+@import './components/footer';
