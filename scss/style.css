@@ -378,6 +378,10 @@ textarea {
   padding: 10px;
 }
 
+.c-hobbies__title {
+  text-align: center;
+}
+
 .c-hobbies__container {
   display: -ms-grid;
   display: grid;
@@ -408,5 +412,33 @@ textarea {
   text-align: center;
   font-weight: 700;
   font-size: 1.2em;
+}
+
+.c-workshops {
+  background: #fff;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.c-workshops__title {
+  text-align: center;
+}
+
+.c-workshops__image-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.c-workshops__image {
+  width: 100%;
+  border-radius: 2px;
 }
 /*# sourceMappingURL=style.css.map */

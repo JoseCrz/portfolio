@@ -3,6 +3,10 @@
     border-radius: $border-radius;
     box-shadow: $shadow;
     padding: 10px;
+
+    &__title {
+        text-align: center;
+    }
     
     &__container {
         display: grid;
