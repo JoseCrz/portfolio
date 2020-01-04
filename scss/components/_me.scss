@@ -9,7 +9,6 @@
     background-size: cover;
     color: white;
     padding: 0 5px;
-    grid-area: me;
     
     &__image {
         width: 100%;
@@ -32,6 +31,7 @@
     }
 
     @include phone {
+        grid-area: me;
         font-size: 12px;
     }
 }

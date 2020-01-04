@@ -9,7 +9,6 @@
     grid-template-columns: 1fr 1fr;
     padding: 10px;
     align-items: center;
-    grid-area: contact;
 
     &__bullet {
         margin-top: 10px;
@@ -29,6 +28,7 @@
     }
 
     @include phone {
+        grid-area: contact;
         grid-column-start: unset;
         grid-column-end: unset;
         grid-template-columns: 1fr;

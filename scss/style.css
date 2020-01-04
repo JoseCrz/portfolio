@@ -256,7 +256,6 @@ textarea {
   background-size: cover;
   color: white;
   padding: 0 5px;
-  grid-area: me;
 }
 
 .c-me__image {
@@ -281,6 +280,7 @@ textarea {
 
 @media screen and (max-width: 540px) {
   .c-me {
+    grid-area: me;
     font-size: 12px;
   }
 }
@@ -291,7 +291,6 @@ textarea {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   padding: 10px;
-  grid-area: recent;
 }
 
 .c-recent__title {
@@ -307,6 +306,9 @@ textarea {
 }
 
 @media screen and (max-width: 540px) {
+  .c-recent {
+    grid-area: recent;
+  }
   .c-recent__cards-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -384,7 +386,6 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  grid-area: contact;
 }
 
 .c-contact__bullet {
@@ -410,6 +411,7 @@ textarea {
 
 @media screen and (max-width: 540px) {
   .c-contact {
+    grid-area: contact;
     -ms-grid-column: unset;
         grid-column-start: unset;
     grid-column-end: unset;
@@ -424,7 +426,6 @@ textarea {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   padding: 10px;
-  grid-area: skills;
 }
 
 .c-skills__title {
@@ -439,13 +440,18 @@ textarea {
   font-weight: 700;
 }
 
+@media screen and (max-width: 540px) {
+  .c-skills {
+    grid-area: skills;
+  }
+}
+
 .c-hobbies {
   background: #fff;
   border-radius: 2px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   padding: 10px;
-  grid-area: hobbies;
 }
 
 .c-hobbies__title {
@@ -484,6 +490,12 @@ textarea {
   font-size: 1.2em;
 }
 
+@media screen and (max-width: 540px) {
+  .c-hobbies {
+    grid-area: hobbies;
+  }
+}
+
 .c-workshops {
   background: #fff;
   border-radius: 2px;
@@ -493,7 +505,6 @@ textarea {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
-  grid-area: workshops;
 }
 
 .c-workshops__title {
@@ -515,6 +526,7 @@ textarea {
 
 @media screen and (max-width: 540px) {
   .c-workshops {
+    grid-area: workshops;
     -ms-grid-column: unset;
         grid-column-start: unset;
     grid-column-end: unset;
@@ -534,7 +546,6 @@ textarea {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
-  grid-area: projects;
 }
 
 .c-projects__title {
@@ -588,6 +599,7 @@ textarea {
 
 @media screen and (max-width: 540px) {
   .c-projects {
+    grid-area: projects;
     -ms-grid-column: unset;
         grid-column-start: unset;
     grid-column-end: unset;
@@ -611,6 +623,11 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  grid-area: footer;
+}
+
+@media screen and (max-width: 540px) {
+  .c-footer {
+    grid-area: footer;
+  }
 }
 /*# sourceMappingURL=style.css.map */

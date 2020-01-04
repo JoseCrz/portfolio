@@ -3,7 +3,6 @@
     border-radius: $border-radius;
     box-shadow: $shadow;
     padding: 10px;
-    grid-area: hobbies;
 
     &__title {
         text-align: center;
@@ -30,5 +29,9 @@
             font-weight: 700;
             font-size: 1.2em;
         }
+    }
+
+    @include phone {
+        grid-area: hobbies;
     }
 }

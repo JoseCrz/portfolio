@@ -3,7 +3,6 @@
     border-radius: $border-radius;
     box-shadow: $shadow;
     padding: 10px;
-    grid-area: recent;
 
     &__title {
         text-align: center;
@@ -16,6 +15,8 @@
     }
 
     @include phone {
+        grid-area: recent;
+        
         &__cards-container {
             grid-template-columns: 1fr;
         }
