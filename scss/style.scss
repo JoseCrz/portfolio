@@ -23,8 +23,6 @@
 
 body {
     margin: 0;
-    padding: 10px 0 0 0;
-    background: #F6F6F6;
 
     @include phone {
         padding: 0;
@@ -42,3 +40,4 @@ h1, h2, h3, h4, h5, h6 {
 // ? COMPONENTS
 @import './components/main';
 @import './components/header';
+@import './components/hero';
