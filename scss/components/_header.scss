@@ -1,4 +1,29 @@
 .c-header {
   display: flex;
   justify-content: space-between;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__list-item {
+    margin-left: 39px;
+  }
+
+  &__link {
+    color: var(--text-white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: .875rem;
+    
+    &--cta {
+      background: var(--accent-color);
+      color: var(--text-black);
+      padding: 8px 16px;
+      border-radius: var(--border-radius);
+      text-transform: uppercase;
+    }
+  }
 }
