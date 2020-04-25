@@ -3,6 +3,7 @@
     --title-font: 'Raleway', sans-serif;
     --body-font: 'Open Sans', sans-serif;
     --primary-color: #0A101F;
+    // --primary-color: #0B111E;
     --accent-color: #D4BF50;
     --text-white: #FFF;
     --text-black: var(--primary-color);
@@ -38,3 +39,5 @@ h1, h2, h3, h4, h5, h6 {
 @import './utils/reset';
 
 // ? COMPONENTS
+@import './components/main';
+@import './components/header';

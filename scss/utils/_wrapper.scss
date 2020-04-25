@@ -1,20 +1,4 @@
 .u-wrapper {
-    max-width: 1280px;
-    // border: 1px solid black;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-
-    @include phone {
-        grid-template-columns: 1fr;
-        grid-template-areas: "me"
-                             "recent"
-                             "contact"
-                             "skills"
-                             "workshops"
-                             "projects"
-                             "hobbies"
-                             "footer";
-    }
+    width: 85%;
+    max-width: 1080px;
 }
