@@ -1,7 +1,11 @@
 // ? VARIABLES
 :root {
-    --title: 'Raleway', sans-serif;
-    --body: 'Open Sans', sans-serif;
+    --title-font: 'Raleway', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+    --primary-color: #0A101F;
+    --accent-color: #D4BF50;
+    --text-white: #FFF;
+    --text-black: var(--primary-color);
 }
 
 @mixin phone {
@@ -12,6 +16,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: var(--body-font);
 }
 
 body {
@@ -25,6 +30,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-font);
 }
 
 // ? UTILITIES
