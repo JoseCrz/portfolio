@@ -17,16 +17,16 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="c-main">
+    <main id="me" class="c-main">
         <div class="u-wrapper">
             <header class="c-header">
                 <div class="c-header__logo"></div>
                 <nav class="c-header__nav">
                     <ul class="c-header__list">
-                        <li class="c-header__list-item"><a class="c-header__link" href="#">About me</a></li>
-                        <li class="c-header__list-item"><a class="c-header__link" href="#">Recent work</a></li>
-                        <li class="c-header__list-item"><a class="c-header__link" href="#">Projects</a></li>
-                        <li class="c-header__list-item"><a class="c-header__link c-header__link--cta" href="#">Let's create</a></li>
+                        <li class="c-header__list-item"><a class="c-header__link" href="#me">About me</a></li>
+                        <li class="c-header__list-item"><a class="c-header__link" href="#work">Recent work</a></li>
+                        <li class="c-header__list-item"><a class="c-header__link" href="#projects">Projects</a></li>
+                        <li class="c-header__cta"><a class="c-header__link" href="#">Let's create</a></li>
                     </ul>
                 </nav>
             </header>
@@ -35,13 +35,13 @@
                     <h1 class="c-hero__title">José Cuevas</h1>
                     <h2 class="c-hero__description">I'm a passionate, always learning, full stack JavaScript developer. Trying to make a positive impact on society.</h2>
                     <div class="c-hero__contact">
-                        <a href="#">
+                        <!-- <a href="">
                             <img class="c-hero__contact-item" src="./img/mail.svg" alt="">
-                        </a>
-                        <a href="#">
+                        </a> -->
+                        <a target="_blank" href="https://github.com/JoseCrz">
                             <img class="c-hero__contact-item" src="./img/github.svg" alt="">
                         </a>
-                        <a href="#">
+                        <a target="_blank" href="https://dobletaptap.com">
                             <img class="c-hero__contact-item" src="./img/world.svg" alt="">
                         </a>
                     </div>
@@ -54,7 +54,7 @@
     </main>
     <section>
         <div class="u-wrapper">
-            <article class="c-reel">
+            <article id="work" class="c-reel">
                 <h2 class="c-reel__title">My recent work</h2>
                 <div class="c-reel__items-container">
                     <a href="#" class="c-reel__item">
@@ -74,7 +74,7 @@
                     </a>
                 </div>
             </article>
-            <article class="c-reel">
+            <article id="projects" class="c-reel">
                 <h2 class="c-reel__title">Personal Projects</h2>
                 <div class="c-reel__items-container">
                     <a href="#" class="c-reel__item">
@@ -101,5 +101,6 @@
             <p class="c-footer__text">José Cuevas | 2020</p>
         </div>
     </footer>
+    <script src="./js/zenscroll-min.js"></script>
 </body>
 </html>

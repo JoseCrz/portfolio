@@ -1,5 +1,5 @@
 .c-hero {
-  height: calc(100vh - 114px);
+  height: calc(100vh - 100px);
   color: var(--text-white);
   display: grid;
   grid-template-columns: 50% 1fr;
@@ -32,5 +32,8 @@
     color: rgba(white, .15);
     font-size: 1.5rem;
     margin: 100px 0 0 0;
+  }
+  a {
+    text-decoration: none;
   }
 }

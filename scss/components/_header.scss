@@ -7,24 +7,41 @@
     display: flex;
     align-items: center;
     list-style: none;
+    margin: 0;
   }
 
   &__list-item {
     margin-left: 39px;
+    color: var(--text-white);
+
+    :hover {
+      color: var(--accent-color);
+    }
+    
+    
+  }
+  
+  &__cta {
+    cursor: pointer;
+    margin-left: 39px;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    padding: 8px 16px;
+    border-radius: var(--border-radius);
+    text-transform: uppercase;
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1) .3s;
+
+    &:hover {
+      background: var(--accent-color);
+      color: var(--text-black);
+    }
+
   }
 
   &__link {
-    color: var(--text-white);
+    color: inherit;
     text-decoration: none;
     font-weight: bold;
     font-size: .875rem;
-    
-    &--cta {
-      background: var(--accent-color);
-      color: var(--text-black);
-      padding: 8px 16px;
-      border-radius: var(--border-radius);
-      text-transform: uppercase;
-    }
   }
 }
