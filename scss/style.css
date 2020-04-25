@@ -300,6 +300,7 @@ textarea {
 
 .c-reel {
   margin-top: 80px;
+  margin-bottom: 140px;
 }
 
 .c-reel__title {
@@ -334,5 +335,25 @@ textarea {
 
 .c-reel__item-link {
   font-weight: bold;
+}
+
+.c-footer {
+  background: var(--primary-color);
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-footer__text {
+  margin: 0;
+  text-align: center;
+  color: var(--text-white);
 }
 /*# sourceMappingURL=style.css.map */

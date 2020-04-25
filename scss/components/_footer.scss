@@ -1,0 +1,13 @@
+.c-footer {
+  background: var(--primary-color);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    margin: 0;
+    text-align: center;
+    color: var(--text-white);
+  }
+}
