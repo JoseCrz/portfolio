@@ -297,4 +297,42 @@ textarea {
   font-size: 1.5rem;
   margin: 100px 0 0 0;
 }
+
+.c-reel {
+  margin-top: 80px;
+}
+
+.c-reel__title {
+  text-align: center;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.c-reel__items-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 70px;
+}
+
+.c-reel__item {
+  border: 3px solid var(--primary-color);
+  border-radius: 30px;
+  padding: 33px 66px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-black);
+}
+
+.c-reel__item-title {
+  margin-top: 0;
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.c-reel__item-link {
+  font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */

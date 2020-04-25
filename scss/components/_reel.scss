@@ -1,0 +1,38 @@
+.c-reel {
+  margin-top: 80px;
+  &__title {
+    text-align: center;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+
+  &__items-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px;
+  }
+
+  &__item {
+    border: 3px solid var(--primary-color);
+    border-radius: 30px;
+    padding: 33px 66px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-black);
+  }
+  
+  &__item-title {
+    margin-top: 0;
+    font-size: 1.3rem;
+    font-weight: normal;
+  }
+
+  &__item-description {
+
+  }
+
+  &__item-link {
+    font-weight: bold;
+  }
+}
