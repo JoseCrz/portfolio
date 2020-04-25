@@ -1,16 +1,8 @@
 // ? VARIABLES
-$shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
-$border-radius: 2px;
-$color-element: #fff;
-$color-text: black;
-$font-titles: 'Lato', sans-serif;
-$font-texts: 'Open Sans', sans-serif;
-$color-green: #63C481;
-$color-blue: #55B5DE;
-$color-purple: #C352AD;
-$color-orange: #E87834;
-$color-deep-blue: #14379D;
-$color-red: #E36054;
+:root {
+    --title: 'Raleway', sans-serif;
+    --body: 'Open Sans', sans-serif;
+}
 
 @mixin phone {
     @media screen and (max-width: 540px) {
@@ -20,7 +12,6 @@ $color-red: #E36054;
 
 * {
     box-sizing: border-box;
-    font-family: $font-texts;
 }
 
 body {
@@ -34,33 +25,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: $font-titles;
-}
-
-.color {
-    &--green {
-        color: $color-green;
-    }
-
-    &--blue {
-        color: $color-blue
-    }
-
-    &--purple {
-        color: $color-purple;
-    }
-
-    &--orange {
-        color: $color-orange;
-    }
-
-    &--deep-blue {
-        color: $color-deep-blue;
-    }
-
-    &--red {
-        color: $color-red;
-    }
 }
 
 // ? UTILITIES
@@ -68,12 +32,3 @@ h1, h2, h3, h4, h5, h6 {
 @import './utils/reset';
 
 // ? COMPONENTS
-@import './components/me';
-@import './components/recent';
-@import './components/card';
-@import './components/contact';
-@import './components/skills';
-@import './components/hobbies';
-@import './components/workshops';
-@import './components/projects';
-@import './components/footer';
