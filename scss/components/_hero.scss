@@ -21,6 +21,7 @@
   &__image {
     height: 100%;
     justify-self: end;
+    
   }
 
   &__contact-item {
@@ -33,7 +34,27 @@
     font-size: 1.5rem;
     margin: 100px 0 0 0;
   }
+  
   a {
     text-decoration: none;
+  }
+
+  @include phone {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+
+    &__image {
+      display: none;
+      height: initial;
+      width: 60%;
+      text-align: center;
+    }
+
+    &__skills {
+      margin: 0;
+    }
   }
 }

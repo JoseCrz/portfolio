@@ -2,4 +2,8 @@
     width: 85%;
     max-width: 1080px;
     margin: 0 auto;
+
+    @include phone {
+        width: 90%;
+    }
 }
