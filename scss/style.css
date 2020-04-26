@@ -312,7 +312,7 @@ textarea {
 }
 
 .c-hero__description {
-  font-size: 1.75rem;
+  font-size: 1.3rem;
   margin: 40px 0;
   font-weight: normal;
 }
@@ -330,8 +330,8 @@ textarea {
 
 .c-hero__skills {
   color: rgba(255, 255, 255, 0.15);
-  font-size: 1.5rem;
-  margin: 100px 0 0 0;
+  font-size: 1.3rem;
+  margin: 40px 0 0 0;
 }
 
 .c-hero a {
