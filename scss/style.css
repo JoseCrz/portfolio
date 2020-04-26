@@ -2,6 +2,8 @@
   --title-font: 'Raleway', sans-serif;
   --body-font: 'Open Sans', sans-serif;
   --primary-color: #0A101F;
+  --primary-color-light: rgba(10, 16, 31, 0.5);
+  --primary-color-light-extra: rgba(10, 16, 31, 0.035);
   --accent-color: #D4BF50;
   --text-white: #FFF;
   --text-black: var(--primary-color);
@@ -338,12 +340,24 @@ textarea {
 }
 
 .c-reel__item {
-  border: 3px solid var(--primary-color);
+  border: 3px solid var(--primary-color-light);
+  background: var(--primary-color-light-extra);
   border-radius: 30px;
   padding: 33px 66px;
   text-align: center;
   text-decoration: none;
+  -webkit-transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s;
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s;
   color: var(--text-black);
+}
+
+.c-reel__item:hover {
+  border: 3px solid var(--primary-color);
+  -webkit-box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+          box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  background: transparent;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .c-reel__item-title {
