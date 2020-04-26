@@ -19,9 +19,13 @@
     margin-left: 39px;
     color: var(--text-white);
 
-    :hover {
+    &:hover,
+    &:active,
+    &:focus-within {
       color: var(--accent-color);
     }
+
+   
     
     
   }
@@ -36,7 +40,7 @@
     text-transform: uppercase;
     transition: cubic-bezier(0.215, 0.610, 0.355, 1) .3s;
 
-    &:hover {
+    &:hover, &:focus-within {
       background: var(--accent-color);
       color: var(--text-black);
     }
@@ -48,6 +52,10 @@
     text-decoration: none;
     font-weight: bold;
     font-size: .875rem;
+    
+    &:focus {
+      outline-color: var(--accent-color);
+    }
   }
 
 }

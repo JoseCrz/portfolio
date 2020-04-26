@@ -264,7 +264,7 @@ textarea {
   color: var(--text-white);
 }
 
-.c-header__list-item :hover {
+.c-header__list-item:hover, .c-header__list-item:active, .c-header__list-item:focus-within {
   color: var(--accent-color);
 }
 
@@ -280,7 +280,7 @@ textarea {
   transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s;
 }
 
-.c-header__cta:hover {
+.c-header__cta:hover, .c-header__cta:focus-within {
   background: var(--accent-color);
   color: var(--text-black);
 }
@@ -290,6 +290,10 @@ textarea {
   text-decoration: none;
   font-weight: bold;
   font-size: .875rem;
+}
+
+.c-header__link:focus {
+  outline-color: var(--accent-color);
 }
 
 .c-hero {
