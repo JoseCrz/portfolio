@@ -238,7 +238,14 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 30px 0;
+}
+
+.c-header__logo {
+  height: 20px;
 }
 
 .c-header__list {
