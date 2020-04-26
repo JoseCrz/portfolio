@@ -11,6 +11,12 @@
 ;
 }
 
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -21,12 +27,6 @@ body {
   margin: 0;
 }
 
-@media screen and (max-width: 540px) {
-  body {
-    padding: 0;
-  }
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--title-font);
 }
@@ -35,6 +35,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 85%;
   max-width: 1080px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 540px) {
+  .u-wrapper {
+    width: 90%;
+  }
 }
 
 /**
@@ -219,6 +225,12 @@ textarea {
   height: 100vh;
 }
 
+@media screen and (max-width: 540px) {
+  .c-main {
+    height: auto;
+  }
+}
+
 .c-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,7 +238,14 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 30px 0;
+}
+
+.c-header__logo {
+  height: 20px;
 }
 
 .c-header__list {
@@ -293,7 +312,7 @@ textarea {
 }
 
 .c-hero__description {
-  font-size: 1.75rem;
+  font-size: 1.3rem;
   margin: 40px 0;
   font-weight: normal;
 }
@@ -311,12 +330,40 @@ textarea {
 
 .c-hero__skills {
   color: rgba(255, 255, 255, 0.15);
-  font-size: 1.5rem;
-  margin: 100px 0 0 0;
+  font-size: 1.3rem;
+  margin: 40px 0 0 0;
 }
 
 .c-hero a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 540px) {
+  .c-hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .c-hero__image {
+    display: none;
+    height: initial;
+    width: 60%;
+    text-align: center;
+  }
+  .c-hero__skills {
+    margin: 0;
+  }
 }
 
 .c-reel {
@@ -368,6 +415,20 @@ textarea {
 
 .c-reel__item-link {
   font-weight: bold;
+}
+
+@media screen and (max-width: 540px) {
+  .c-reel {
+    margin: 50px 0;
+  }
+  .c-reel__items-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 20px 0;
+  }
+  .c-reel__item {
+    padding: 15px 30px;
+  }
 }
 
 .c-footer {
