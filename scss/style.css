@@ -406,7 +406,7 @@ textarea {
   color: var(--text-black);
 }
 
-.c-reel__item:hover {
+.c-reel__item:hover, .c-reel__item:focus-within {
   border: 3px solid var(--primary-color);
   -webkit-box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
           box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
