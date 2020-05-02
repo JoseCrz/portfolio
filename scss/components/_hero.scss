@@ -73,6 +73,7 @@
       padding-top: 30px;
       border-top: 2px solid var(--accent-color);
       margin: 20px 0;
+      text-align: center;
     }
     
     &__image {
@@ -89,8 +90,15 @@
       }
     }
 
+    &__contact {
+      display: flex;
+      justify-content: center;
+    }
+
     &__skills {
       margin: 0;
+      padding-top: 15px;
+      text-align: center;
     }
   }
 }
