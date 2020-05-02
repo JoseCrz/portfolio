@@ -13,6 +13,7 @@
     align-items: center;
     list-style: none;
     margin: 0;
+    padding: 0;
   }
 
   &__list-item {
@@ -55,6 +56,45 @@
     
     &:focus {
       outline-color: var(--accent-color);
+    }
+  }
+
+  @include phone {
+    justify-content:  center;
+    
+    &__nav {
+      position: fixed;
+      background: var(--accent-color);
+      // color: var(--primary-color);
+      top: 0;
+      right: -50vw;
+      height: 100vh;
+      width: 50vw;
+      transition: cubic-bezier(0.215, 0.610, 0.355, 1) .3s;
+
+      &--active {
+        right: 0;
+      }
+    }
+    
+    &__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+    
+    &__list-item {
+      margin: 16px 0;
+    }
+
+    &__link {
+      color: var(--primary-color);
+      font-size: 1.2em;
+    }
+
+    &__cta {
+      margin: 0;
     }
   }
 

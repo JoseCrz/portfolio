@@ -41,10 +41,12 @@ h1, h2, h3, h4, h5, h6 {
 // ? UTILITIES
 @import './utils/wrapper';
 @import './utils/reset';
+@import './utils/icons';
 
 // ? COMPONENTS
 @import './components/main';
 @import './components/header';
+@import './components/burgerMenu';
 @import './components/hero';
 @import './components/reel';
 @import './components/footer';

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
         <div class="u-wrapper">
             <header class="c-header">
                 <img src="./img/logo.svg" class="c-header__logo" alt="Jose's Logo">
-                <nav class="c-header__nav">
+                <nav class="c-header__nav" id="menu">
                     <ul class="c-header__list">
                         <li class="c-header__list-item"><a class="c-header__link" href="#me">About me</a></li>
                         <li class="c-header__list-item"><a class="c-header__link" href="#work">Recent work</a></li>
@@ -29,6 +29,9 @@
                         <li class="c-header__cta"><a class="c-header__link" href="mailto:jose@dobletaptap.com">Let's create</a></li>
                     </ul>
                 </nav>
+                <div class="c-burger-menu" id="burger-button">
+                    <i class="icon-menu"></i>
+                </div>
             </header>
             <section class="c-hero">
                 <div class="c-hero__copy">
@@ -91,6 +94,7 @@
             <p class="c-footer__text">José Cuevas | 2020</p>
         </div>
     </footer>
+    <script  src="./js/index.js"></script>
     <script src="./js/zenscroll-min.js"></script>
 </body>
 </html>
