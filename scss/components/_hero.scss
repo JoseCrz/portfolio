@@ -22,6 +22,10 @@
     height: 100%;
     justify-self: end;
     
+    &--mobile {
+      display: none;
+    }
+
   }
 
   &__contact-item {
@@ -51,12 +55,38 @@
     height: auto;
     align-items: center;
     justify-content: center;
+    padding-bottom: 40px;
+    
+    &__copy {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
 
-    &__image {
-      display: none;
-      height: initial;
-      width: 60%;
+    &__title {
+      font-size: 4rem;
+      padding-bottom: 20px;
+      border: none;
       text-align: center;
+    }
+    
+    &__description {
+      padding-top: 30px;
+      border-top: 2px solid var(--accent-color);
+      margin: 20px 0;
+    }
+    
+    &__image {
+      
+      &--mobile {
+        display: block;
+        height: auto;
+        width: 60%;
+        margin: 0 auto;
+      }
+      
+      &--desktop {
+        display: none;
+      }
     }
 
     &__skills {

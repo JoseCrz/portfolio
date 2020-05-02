@@ -467,6 +467,10 @@ textarea {
       justify-self: end;
 }
 
+.c-hero__image--mobile {
+  display: none;
+}
+
 .c-hero__contact-item {
   width: 35px;
   margin-right: 20px;
@@ -502,12 +506,33 @@ textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-bottom: 40px;
   }
-  .c-hero__image {
-    display: none;
-    height: initial;
-    width: 60%;
+  .c-hero__copy {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .c-hero__title {
+    font-size: 4rem;
+    padding-bottom: 20px;
+    border: none;
     text-align: center;
+  }
+  .c-hero__description {
+    padding-top: 30px;
+    border-top: 2px solid var(--accent-color);
+    margin: 20px 0;
+  }
+  .c-hero__image--mobile {
+    display: block;
+    height: auto;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .c-hero__image--desktop {
+    display: none;
   }
   .c-hero__skills {
     margin: 0;
